@@ -1,0 +1,36 @@
+import { Grid, Typography } from "@material-ui/core";
+
+const Welcome = (props) => {
+  return (
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      style={{ padding: "30px", minHeight: "93vh", transform: "translateY(-30px)" }} // Moves content up
+    >
+      
+      <Grid item>
+        <Typography variant="h2" align="center">Welcome to Talent Bridge</Typography>
+      </Grid>
+    </Grid>
+  );
+};
+
+export const ErrorPage = (props) => {
+  return (
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      style={{ padding: "30px", minHeight: "93vh", transform: "translateY(-30px)" }} // Moves content up
+    >
+      <Grid item>
+        <Typography variant="h2">Error 404</Typography>
+      </Grid>
+    </Grid>
+  );
+};
+
+export default Welcome;
